@@ -40,7 +40,7 @@ test('GET /api/health returns a healthy response', async () => {
   });
 });
 
-test('GET /api/version returns the current version', async () => {
+test('GET /api/version returns the current api version', async () => {
   const response = await fetch(`${baseUrl}/api/version`);
 
   assert.equal(response.status, 200);
